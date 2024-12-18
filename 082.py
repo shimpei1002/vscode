@@ -1,0 +1,24 @@
+L,R=map(int,input().split())
+sum=0
+i=L
+l=0
+L=len(str(L))
+last=(10**L)-1
+if(R<=last):
+    last=R
+    l=1
+while(l==0):
+    sum+=L*(i+last)*(last-i+1)//2
+    sum=sum%(10**9+7)
+    if(R<=10**(L+1)-1):
+        last=R
+        l=1
+        L+=1
+        i=10**(L-1)
+    else:
+        L+=1
+        last=(10**L)-1
+        i=10**(L-1)
+sum+=L*(i+last)*(last-i+1)//2
+sum=sum%(10**9+7)
+print(str(sum))
