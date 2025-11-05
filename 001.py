@@ -21,3 +21,4 @@ while right-left>1:
     else:
         right=mid
 print(left)
+print(left)
