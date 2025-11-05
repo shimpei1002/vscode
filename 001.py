@@ -22,3 +22,4 @@ while right-left>1:
         right=mid
 print(left)
 print(left)
+print(left)
